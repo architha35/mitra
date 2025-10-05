@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Assistant-PRO",
+  title: "mitra",
   description: "Generated to create assistant",
 };
 

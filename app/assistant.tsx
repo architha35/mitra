@@ -35,17 +35,19 @@ export const Assistant = () => {
         <div className="flex h-dvh w-full pr-0.5">
           <ThreadListSidebar />
           <SidebarInset>
-            <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-              <SidebarTrigger />
-              <Separator orientation="vertical" className="mr-2 h-4" />
+            <header className="flex h-16 shrink-0 items-center gap-2 border-b border-border/50 bg-gradient-to-r from-background via-background to-background/95 backdrop-blur-sm px-6">
+              <SidebarTrigger className="hover:bg-muted/50 transition-colors duration-200 rounded-lg p-2" />
+              <Separator orientation="vertical" className="mr-3 h-6 bg-border/50" />
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block">
-                    
+                    <BreadcrumbLink href="#" className="hover:text-primary transition-colors duration-200">
+                      Home
+                    </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="hidden md:block" />
                   <BreadcrumbItem>
-                    <BreadcrumbPage>Starter Template</BreadcrumbPage>
+                    <BreadcrumbPage className="font-medium text-foreground/90">Chat Assistant</BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>

@@ -112,24 +112,24 @@ const ThreadWelcomeSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 @md:grid-cols-2">
       {[
         {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
+          title: "Can you suggest something I might like?",
+          label: "suggest according to my interests",
+          action: "Can you suggest something I might like? suggest according to my interests",
         },
         {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
+          title: "Hi there! How can I help you today?",
+          label: "",
+          action: "Hi there! How can I help you today?",
         },
         {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
+          title: "How does this site work?",
+          label: "",
+          action: "How does this site work?",
         },
         {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
+          title: "I need help with something else.",
+          label: "connects to customer care agent",
+         action: "I need help with something else connects to customer care agent",
         },
       ].map((suggestedAction, index) => (
         <m.div
