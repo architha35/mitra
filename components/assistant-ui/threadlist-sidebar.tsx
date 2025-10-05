@@ -47,7 +47,7 @@ export function ThreadListSidebar({
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild className="hover:bg-sidebar-accent/20 transition-colors duration-200 rounded-xl">
               <a
-                href="https://github.com/architha35"
+                href="https://github.com/architha35/mitra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="smooth-text"

@@ -113,7 +113,7 @@ const ThreadWelcomeSuggestions: FC = () => {
       {[
         {
           title: "Can you suggest something I might like?",
-          label: "suggest according to my interests",
+          label: "",
           action: "Can you suggest something I might like? suggest according to my interests",
         },
         {
@@ -128,8 +128,8 @@ const ThreadWelcomeSuggestions: FC = () => {
         },
         {
           title: "I need help with something else.",
-          label: "connects to customer care agent",
-         action: "I need help with something else connects to customer care agent",
+          label: "",
+         action: "I need help with something else",
         },
       ].map((suggestedAction, index) => (
         <m.div
