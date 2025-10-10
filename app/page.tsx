@@ -1,7 +1,19 @@
-import { Assistant } from "./assistant";
+import { AssistantRuntimeProvider } from "@assistant-ui/react";
+import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
+import { ThreadList } from "@/components/assistant-ui/thread-list";
+import { Thread } from "@/components/assistant-ui/thread";
 
-export default function HomePage() {
+const MyApp = () => {
+  const runtime = useChatRuntime({
+    api: "/api/chat",
+  });
+
   return (
-    <Assistant />
+    <AssistantRuntimeProvider runtime={runtime}>
+      <div>
+        <ThreadList />
+        <Thread />
+      </div>
+    </AssistantRuntimeProvider>
   );
-}
+};
